@@ -2,9 +2,6 @@ package com.adunity.ad;
 
 import android.os.Bundle;
 
-import com.adunity.library.AdUtils;
-import com.zhaixin.open.SplashAd;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -23,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
     }
 
 

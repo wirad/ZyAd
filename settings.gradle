@@ -27,3 +27,4 @@ dependencyResolutionManagement {
 rootProject.name = "Ad"
 include ':app'
 include ':library'
+include ':aar-module'

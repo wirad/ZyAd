@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.adunity.library'
+    namespace 'com.adunity.aar_module'
     compileSdk 35
 
     defaultConfig {
@@ -32,10 +32,8 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
-    api project(':aar-module')  // 修改这一行
-//    implementation(name: 'ZhaiXin_V2.6.1_release', ext: 'aar')  // 去掉 .aar 后缀
+    implementation(name: 'ZhaiXin_V2.6.1_release', ext: 'aar')  // 去掉 .aar 后缀
 }
 
-// ============ 最简单的 JitPack 配置 ============
-// 只需要这一行！
-group = 'com.github.wirad'  // 替换为你的 GitHub 用户名
+configurations.maybeCreate("default")
+artifacts.add("default", file('libs/ZhaiXin_V2.6.1_release.aar'))
