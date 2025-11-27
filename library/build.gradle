@@ -32,4 +32,10 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+    api fileTree(include: ['*.aar'], dir: 'libs')
+//    implementation(name: 'ZhaiXin_V2.6.1_release', ext: 'aar')  // 去掉 .aar 后缀
 }
+
+// ============ 最简单的 JitPack 配置 ============
+// 只需要这一行！
+group = 'com.github.wirad'  // 替换为你的 GitHub 用户名

@@ -16,6 +16,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        // ============ 在这里添加 flatDir 配置 ============
+        flatDir {
+            dirs 'library/libs'  // 指定 library 模块的 libs 目录
+        }
     }
 }
 
